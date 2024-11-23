@@ -76,6 +76,10 @@ const ListContainer = styled.div`
       display: none;
     }
   }
+  a{
+    font-weight: 1000;
+    text-decoration: underline;
+  }
 `;
 
 function Bio() {
@@ -121,7 +125,7 @@ function Bio() {
             <p>
               I’ve had the opportunity to work in diverse roles that have shaped
               my skills and passion for technology. As a full-stack developer, I
-              built
+              built {" "}
               <a href="https://github.com/koionaroll/english100eportfolio">
                 THIS
               </a>{" "}
