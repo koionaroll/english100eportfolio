@@ -60,18 +60,18 @@ const ListContainer = styled.div`
     max-height: 24vh;
     overflow-y: auto;
   }
-  button{
-    border:none;
-    font-size:3rem;
+  button {
+    border: none;
+    font-size: 3rem;
     text-align: left;
-    width:100%;
-    background-color:#f4f4f4;
+    width: 100%;
+    background-color: #f4f4f4;
     cursor: pointer;
-    font-weight:450;
-  } 
-  :nth-child(5){
-    font-size:2rem;
-    font-weight:500;
+    font-weight: 450;
+  }
+  :nth-child(5) {
+    font-size: 2rem;
+    font-weight: 500;
     @media (max-width: 800px) {
       display: none;
     }
@@ -79,20 +79,20 @@ const ListContainer = styled.div`
 `;
 
 function Bio() {
-  const clickUp = ()=>{
-    window.scrollBy(0,-1);
-  }
-  const clickDown = ()=>{
-    window.scrollBy(0,1);
-  }
+  const clickUp = () => {
+    window.scrollBy(0, -1);
+  };
+  const clickDown = () => {
+    window.scrollBy(0, 1);
+  };
   return (
     <Container>
       <Content>
         <ListContainer>
           <div>
             <section>
-            <button onClick={()=>clickUp()}>^</button>
-            <h1>About Me</h1>
+              <button onClick={() => clickUp()}>^</button>
+              <h1>About Me</h1>
             </section>
             <img src={profile} alt="profile" />
           </div>
@@ -121,20 +121,24 @@ function Bio() {
             <p>
               I’ve had the opportunity to work in diverse roles that have shaped
               my skills and passion for technology. As a full-stack developer, I
-              built THIS website from scratch using ViteJS and the React
-              framework, with styled SCSS components, and deployed it on
-              Netlify. I have experience with creating functional, user-friendly
-              platforms from the ground up. Before that, I worked as a CompTIA+
-              certified IT technician at F3 Technologies, where I installed
-              digital infrastructure for small to medium-sized restaurants
-              across the West Coast. I also trained staff on using newly
-              installed POS, inventory, and payroll systems while
-              troubleshooting client network issues. Additionally, as a
-              facilities worker at Capilano University, I developed hands-on
-              skills with power tools, hardware, and home improvement tasks.
-              These experiences have not only solidified my technical expertise
-              but also fueled my desire to pursue further education and use
-              engineering to create impactful solutions.
+              built
+              <a href="https://github.com/koionaroll/english100eportfolio">
+                THIS
+              </a>{" "}
+              website from scratch using ViteJS and the React framework, with
+              styled SCSS components, and deployed it on Netlify. I have
+              experience with creating functional, user-friendly platforms from
+              the ground up. Before that, I worked as a CompTIA+ certified IT
+              technician at F3 Technologies, where I installed digital
+              infrastructure for small to medium-sized restaurants across the
+              West Coast. I also trained staff on using newly installed POS,
+              inventory, and payroll systems while troubleshooting client
+              network issues. Additionally, as a facilities worker at Capilano
+              University, I developed hands-on skills with power tools,
+              hardware, and home improvement tasks. These experiences have not
+              only solidified my technical expertise but also fueled my desire
+              to pursue further education and use engineering to create
+              impactful solutions.
             </p>
           </div>
           <div>
@@ -155,7 +159,7 @@ function Bio() {
               thing over and over.
             </p>
           </div>
-          <button onClick={()=>clickDown()}>v</button>
+          <button onClick={() => clickDown()}>v</button>
         </ListContainer>
       </Content>
     </Container>
