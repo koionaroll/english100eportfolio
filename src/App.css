@@ -1,0 +1,14 @@
+@import "./styles/_font.scss";
+
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Satoshi';
+}
+
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior:smooth;
+}
