@@ -1,4 +1,4 @@
-import React, { FormEvent, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 
@@ -17,7 +17,7 @@ const Content = styled.div`
   font-size: 1.5rem;
   margin-top: 30vh;
   color: #282c34;
-  width: 70vw;
+  width: 80vw;
 `;
 
 const Email = styled.form`
@@ -75,11 +75,13 @@ const Email = styled.form`
 const TopLeftButton = styled.button`
   height: 1rem;
   width: 1rem;
+  margin-top:1rem;
   background-color: #f4f4f4;
   cursor: pointer;
   border: none;
   font-size:3rem;
   font-weight:450;
+  
 `;
 
 function Contact() {
@@ -133,6 +135,7 @@ function Contact() {
         }
       );
   };
+
   return (
     <Container>
       <TopLeftButton onClick={clickUp}>^</TopLeftButton>

@@ -3,7 +3,7 @@ import React from "react";
 import profile from "../assets/images/crop.jpg";
 
 const Container = styled.div`
-  height: 100vh;
+  max-height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
@@ -24,15 +24,11 @@ const ListContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 5vw;
-
   img {
     width: 15rem;
     height: 15rem;
     object-fit: cover;
     border-radius: 50%;
-    @media (max-width: 900px) {
-      display: none;
-    }
   }
 
   h3 {
@@ -57,7 +53,7 @@ const ListContainer = styled.div`
     text-align: left;
     text-align-last: left;
     font-size: 1.2rem;
-    max-height: 24vh;
+    max-height: 14vh;
     overflow-y: auto;
   }
   button {
@@ -72,9 +68,6 @@ const ListContainer = styled.div`
   :nth-child(5) {
     font-size: 2rem;
     font-weight: 500;
-    @media (max-width: 800px) {
-      display: none;
-    }
   }
   a{
     font-weight: 1000;
