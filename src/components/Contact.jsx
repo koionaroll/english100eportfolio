@@ -85,16 +85,18 @@ const TopLeftButton = styled.button`
 `;
 
 function Contact() {
-  const ref = useRef<any>(null);
+  const ref = useRef(null);
   const [success, setSuccess] = useState(false);
   const [empty, setEmpty] = useState(false);
   const [reload, setReload] = useState(0);
+
+  console.log(import.meta.env.VITE_SERVICE_ID)
 
   const clickUp = () => {
     window.scrollBy(0, -1);
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (
       ref.current.name.value === "" ||
