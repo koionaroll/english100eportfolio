@@ -8,14 +8,12 @@ const Container = styled.div`
   scroll-snap-stop: always;
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   background-color: #f4f4f4;
 `;
 
 const Content = styled.div`
-  text-align: center;
   font-size: 1.5rem;
-  margin-top: 30vh;
   color: #282c34;
   width: 80vw;
 `;
@@ -75,13 +73,12 @@ const Email = styled.form`
 const TopLeftButton = styled.button`
   height: 1rem;
   width: 1rem;
-  margin-top:1rem;
   background-color: #f4f4f4;
   cursor: pointer;
   border: none;
   font-size:3rem;
   font-weight:450;
-  
+  margin:0 0 35rem 0;
 `;
 
 function Contact() {

@@ -62,6 +62,10 @@ const Name = styled.h1`
   font-weight: bold;
   color: #f4f4f4;
 
+  @media (max-width: 560px) {
+      font-size:5rem
+    }
+
   transform: translateY(-50px);
   animation: ${fadeInMove} 1.5s ease-out forwards;
 `;

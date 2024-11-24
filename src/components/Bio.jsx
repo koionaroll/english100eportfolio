@@ -24,11 +24,16 @@ const ListContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 5vw;
+ 
   img {
     width: 15rem;
     height: 15rem;
     object-fit: cover;
     border-radius: 50%;
+    @media (max-width: 560px) {
+      width: 10rem;
+    height: 10rem;
+    }
   }
 
   h3 {
@@ -96,9 +101,9 @@ function Bio() {
           <div>
             <h3>Who Am I?</h3>
             <p>
-              My name’s Khoi, and I’m currently pursuing Engineering at Capilano
+              My name’s Khôi, and I’m currently pursuing Engineering at Capilano
               University. Over the past two years, I’ve been working
-              professionally across various tech ventures. At the time, I took a
+              across various proffession in the tech field. At the time, I took a
               break from post-secondary education to explore different paths and
               reflect on my goals. During that time, I ran a marathon, worked on
               a boat, and traveled. I also built a computer, which sparked my
@@ -122,17 +127,13 @@ function Bio() {
               <a href="https://github.com/koionaroll/english100eportfolio">
                 THIS
               </a>{" "}
-              website from scratch using ViteJS and the React framework, with
-              styled SCSS components, and deployed it on Netlify. I have
+              website from scratch using ViteJS with React as a framework, Styled-Components with SCSS, and deployed it on Netlify. I have
               experience with creating functional, user-friendly platforms from
-              the ground up. Before that, I worked as a CompTIA+ certified IT
-              technician at F3 Technologies, where I installed digital
-              infrastructure for small to medium-sized restaurants across the
-              West Coast. I also trained staff on using newly installed POS,
+              the ground up. After that, I worked as a CompTIA+ certified IT
+              technician at F3 Technologies, where I installed the digital
+              infrastructure for small to medium-sized restaurants across Vancouver. I also trained staff on using their newly installed POS,
               inventory, and payroll systems while troubleshooting client
-              network issues. Additionally, as a facilities worker at Capilano
-              University, I developed hands-on skills with power tools,
-              hardware, and home improvement tasks. These experiences have not
+              network issues. Additionally, I worked at Capilano University as a Facilities Worker. There, I got the chance to exercise my knowledge of home These experiences have not
               only solidified my technical expertise but also fueled my desire
               to pursue further education and use engineering to create
               impactful solutions.
