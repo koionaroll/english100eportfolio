@@ -3,7 +3,7 @@ import React from "react";
 import profile from "../assets/images/crop.jpg";
 
 const Container = styled.div`
-  max-height: 100vh;
+  height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;

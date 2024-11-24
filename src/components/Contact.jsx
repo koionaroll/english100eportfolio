@@ -74,14 +74,12 @@ const Email = styled.form`
 
 const TopLeftButton = styled.button`
   height: 1rem;
-  margin-top:20rem;
   width: 1rem;
   background-color: #f4f4f4;
   cursor: pointer;
   border: none;
   font-size:3rem;
   font-weight:450;
-
 `;
 
 function Contact() {
@@ -89,8 +87,6 @@ function Contact() {
   const [success, setSuccess] = useState(false);
   const [empty, setEmpty] = useState(false);
   const [reload, setReload] = useState(0);
-
-  console.log(import.meta.env.VITE_SERVICE_ID)
 
   const clickUp = () => {
     window.scrollBy(0, -1);
